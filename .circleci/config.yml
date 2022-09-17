@@ -1,6 +1,8 @@
 version: 2.1
+
 orbs:
   slack: circleci/slack@4.9.3
+
 jobs:
   notify:
     docker:
@@ -26,6 +28,7 @@ jobs:
               ]
             }
           event: always
+
 workflows:
   send-notification:
     jobs:
